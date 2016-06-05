@@ -1,0 +1,21 @@
+---
+builds:
+  5ecda071c4a8c4cb4b8cbfdbf3b027b3c07e0cbb:
+    version: 5ecda071c4a8c4cb4b8cbfdbf3b027b3c07e0cbb
+    sha1: 37bc750b339fa385193eabebdf4089284d776242
+  10addbe07a3ccfe8ed8966798bae1e40ddb1f089:
+    version: 10addbe07a3ccfe8ed8966798bae1e40ddb1f089
+    sha1: bc1acdb68c8c95b956fa9e5a5bddc0ade9af5b2a
+  7aa7f2807ac553dcef8b6a24c871f70cc3a12288:
+    version: 7aa7f2807ac553dcef8b6a24c871f70cc3a12288
+    sha1: 0d54cc89e96bce0d3ff49d85da527069f2445da2
+  3e13c0a3fd4a451483fe5a91de65a85d8a3a9aef:
+    version: 3e13c0a3fd4a451483fe5a91de65a85d8a3a9aef
+    sha1: d0bbd55c733ec9a2d12b791fb2f8c036e14197a3
+  10cab815e15173396b1af78aba8c2120b502a8da:
+    version: 10cab815e15173396b1af78aba8c2120b502a8da
+    sha1: a7c93c8d6da5374018b62ff338cb1619fb93b933
+  bbf12114fcbb9603dbac18f12410596079dc4bf8:
+    version: bbf12114fcbb9603dbac18f12410596079dc4bf8
+    sha1: 2b8fe170b17a5bd11c67c9a3a340c625b26cf474
+format-version: '2'

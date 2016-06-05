@@ -1,0 +1,5 @@
+final_name: storm-boshrelease
+blobstore:
+  provider: local
+  options:
+    blobstore_path: /home/ubuntu/storm

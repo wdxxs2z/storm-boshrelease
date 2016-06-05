@@ -1,0 +1,7 @@
+---
+name: storm
+dependencies:
+ - java
+ - python
+files:
+- storm/apache-storm-1.0.1.tar.gz

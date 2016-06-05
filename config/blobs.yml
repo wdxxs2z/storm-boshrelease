@@ -1,0 +1,21 @@
+---
+python/Python-2.7.6.tgz:
+  object_id: a38c142c-0a73-4276-9f89-ce97d0ca6e90
+  sha: 8328d9f1d55574a287df384f4931a3942f03da64
+  size: 14725931
+java/jdk-7u79-linux-x64.tar.gz:
+  object_id: 0ae2ab00-f866-4e61-9a6d-d340123fb864
+  sha: c4deb058f674ab732b36a101147add089cf7f134
+  size: 153512879
+storm/apache-storm-0.9.1-incubating.tar.gz:
+  object_id: 3130220a-ba83-4bbc-b0e1-bfdc40d533f7
+  sha: 44d1a5cc421ba95605fe1a32262d8234abf5befd
+  size: 15531472
+java/jdk-1.7.0_51.tar.gz:
+  object_id: 00c7ea19-6a93-416f-ba37-346bbe20d071
+  sha: bee3b085a90439c833ce18e138c9f1a615152891
+  size: 138199690
+storm/apache-storm-1.0.1.tar.gz:
+  object_id: 39d8f455-5c0f-4042-83c8-1c012e656dc9
+  sha: 23d2e44c2e2c1fabd028ac0ca9d63d32150ce8a8
+  size: 169893976

@@ -1,0 +1,36 @@
+---
+packages:
+- name: python
+  version: dab0473e47eda76250d8cfa13e5d7ae60028ec75
+  fingerprint: dab0473e47eda76250d8cfa13e5d7ae60028ec75
+  sha1: d18605d805e076a3a603f699a28e69a6587d0782
+  dependencies: []
+- name: java
+  version: cde9f14f60b7abfe9c61e5ae12c9e15cb7fdd6dc
+  fingerprint: cde9f14f60b7abfe9c61e5ae12c9e15cb7fdd6dc
+  sha1: 49316ceac1f2adb3589dc67bb3bae88eff382485
+  dependencies: []
+- name: storm
+  version: b93d69b75bf586143a15433f92452593df85dd3f
+  fingerprint: b93d69b75bf586143a15433f92452593df85dd3f
+  sha1: 87a51778e80e2f5e746958d10224cb9b670cd268
+  dependencies:
+  - java
+  - python
+jobs:
+- name: storm-supervisor
+  version: 7aa7f2807ac553dcef8b6a24c871f70cc3a12288
+  fingerprint: 7aa7f2807ac553dcef8b6a24c871f70cc3a12288
+  sha1: 0d54cc89e96bce0d3ff49d85da527069f2445da2
+- name: storm-nimbus
+  version: 987135549766848a0d42b3fe22f6e53a06e3c750
+  fingerprint: 987135549766848a0d42b3fe22f6e53a06e3c750
+  sha1: 2e743de35e2aacf739b9a1fc320ba17581193d18
+- name: storm-ui
+  version: 90309ef0a9090d855ba822af7b1dd097546c1754
+  fingerprint: 90309ef0a9090d855ba822af7b1dd097546c1754
+  sha1: 678402a6fe79e1323b500d0b69f03ac7a86723cb
+commit_hash: '00000000'
+uncommitted_changes: false
+name: storm-boshrelease
+version: 0+dev.13

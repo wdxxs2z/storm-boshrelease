@@ -1,0 +1,12 @@
+---
+builds:
+  cc3282e39b7e33e62e065b0efc645bc688bc7055:
+    version: cc3282e39b7e33e62e065b0efc645bc688bc7055
+    sha1: 029521fff90b5f8260002902e282137dbce630e9
+  b56e50cf685ac33621daaf0d9b672dc2cc7a9630:
+    version: b56e50cf685ac33621daaf0d9b672dc2cc7a9630
+    sha1: 9bab7762cd45fde1e14044bd1ce0eed3591a49c0
+  cde9f14f60b7abfe9c61e5ae12c9e15cb7fdd6dc:
+    version: cde9f14f60b7abfe9c61e5ae12c9e15cb7fdd6dc
+    sha1: 49316ceac1f2adb3589dc67bb3bae88eff382485
+format-version: '2'
