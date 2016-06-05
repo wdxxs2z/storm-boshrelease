@@ -1,0 +1,115 @@
+compilation:
+  cloud_properties: 
+    ram: 4096
+    disk: 32768
+    cpu: 2
+    datacenters:
+    - clusters:
+      - Test-Cluster:
+          resource_pool: CloudFoundry
+  network: storm-network
+  reuse_compilation_vms: true
+  workers: 6
+director_uuid: ChangeMe
+name: cf-storm
+releases:
+- name: storm-boshrelease
+  version: latest
+- name: cf
+  version: latest
+networks:
+- name: storm-network
+  subnets:
+  - cloud_properties: 
+      name: ChangeMe
+    range: ChangeMe
+    gateway: ChangeMe
+    dns:
+    - ChangeMe
+    static:
+    - ChangeMe
+    - ChangeMe
+    - ChangeMe
+jobs:
+- instances: 1
+  name: storm_nimbus
+  networks:
+  - name: storm-network
+    static_ips:
+    - ChangeMe
+  persistent_disk: 2048
+  properties:
+    metron_agent:
+      zone: ChangeMe
+  resource_pool: storm_resource
+  templates:
+  - name: metron_agent
+    release: cf
+  - name: storm-nimbus
+    release: storm-boshrelease
+  - name: storm-ui
+    release: storm-boshrelease
+  update:
+    max_in_flight: 1
+    serial: true
+- instances: 2
+  name: storm_supervisor
+  networks:
+  - name: storm-network
+    static_ips:
+    - ChangeMe
+    - ChangeMe
+  persistent_disk: 2048
+  properties:
+    metron_agent:
+      zone: ChangeMe
+  resource_pool: storm_resource
+  templates:
+  - name: metron_agent
+    release: cf
+  - name: storm-supervisor
+    release: storm-boshrelease
+  update:
+    max_in_flight: 1
+    serial: true
+resource_pools:
+- name: storm_resource
+  stemcell:
+    name: bosh-vsphere-esxi-ubuntu-trusty-go_agent
+    version: "ChangeMe"
+  network: storm-network
+  cloud_properties: 
+    ram: 2048
+    disk: 2048
+    cpu: 2
+    datacenters:
+    - clusters:
+      - Test-Cluster:
+          resource_pool: CloudFoundry
+update:
+  canaries: 1
+  canary_watch_time: 5000-120000
+  max_in_flight: 1
+  serial: false
+  update_watch_time: 5000-120000
+properties:
+  loggregator:
+    etcd:
+      machines:
+      - ChangeMe
+  metron_agent:
+    deployment: cf
+  metron_endpoint:
+    shared_secret: ChangeMe
+  storm:
+    master:
+      host: ChangeMe
+    masters:
+    - ChangeMe
+    nimbus:
+      host: ChangeMe
+  zookeeper:
+    servers:
+    - ChangeMe
+    - ChangeMe
+    - ChangeMe
